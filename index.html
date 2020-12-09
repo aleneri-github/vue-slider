@@ -12,13 +12,13 @@
     <div id="root">
       <div id="wrapper">
         <div class="prev">
-          <i class="fas fa-chevron-left"></i>
+          <i class="fas fa-chevron-left" @click="prevImg"></i>
         </div>
         <div class="slide">
-          <img v-bind:src="images[0]" alt="">
+          <img v-bind:src="images[imgIndex]" alt="Borghi d'Italia">
         </div>
         <div class="next">
-          <i class="fas fa-chevron-right"></i>
+          <i class="fas fa-chevron-right" @click="nextImg"></i>
         </div>
       </div>
 
