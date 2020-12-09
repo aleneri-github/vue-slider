@@ -11,6 +11,13 @@ var app = new Vue({
       "https://www.turituri.com/wp-content/uploads/amalfi-1.jpg"
     ]
   },
+  created: function() {
+    setInterval(
+      () => {
+        this.nextImg();
+      }, 2000
+    )
+  },
   methods: {
     nextImg: function() {
       this.imgIndex++;
