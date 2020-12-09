@@ -5,10 +5,11 @@
 }
 
 #root {
-  background-color: lightblue;
+  background-color: dodgerblue;
 }
 
 #wrapper {
+  position: relative;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -21,11 +22,12 @@
 }
 .prev i, .next i {
   cursor: pointer;
+  color: white;
 }
 
 .slide {
-  height: 400px;
-  width: 500px;  
+  height: 600px;
+  width: 900px;
 }
 
 .slide img {
@@ -33,4 +35,19 @@
   height: 100%;
   object-fit: cover;
   object-position: 50% 50%;
+  border-radius: 20px;
+}
+
+.nav {
+  position: absolute;
+  bottom: 65px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+.nav i {
+  margin: 5px;
+  padding: 5px;
 }
