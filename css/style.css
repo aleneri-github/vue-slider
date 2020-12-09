@@ -5,6 +5,23 @@
 }
 
 #root {
-  height: 100vh;
   background-color: lightblue;
+}
+
+#wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prev, .next {
+  font-size: 40px;
+}
+
+.slide {
+
+  height: 400px;
+  width: 500px;
+  background-color: red;
 }
