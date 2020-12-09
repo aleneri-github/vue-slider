@@ -21,7 +21,7 @@
           <i class="fas fa-chevron-right" @click="nextImg"></i>
         </div>
         <div class="nav">
-          <i v-for="(dot, index) in images" :class="(index == imgIndex) ? 'active' : ''" class="fas fa-circle"></i>
+          <i v-for="(dot, index) in images" :class="(index == imgIndex) ? 'active' : ''" class="fas fa-circle" @click="imgIndex = index"></i>
 
         </div>
       </div>
